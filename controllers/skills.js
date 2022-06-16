@@ -18,9 +18,16 @@ function newSkill(req, res) {
 }
 
 function create(req, res) {
-  Skill.create(req.body)
+  const type = req.body.type
+  const stringProficiency = req.body.proficiency
+  const proficiency = stringProficiency === 'on' ? true : false
+  const data = {
+    type,
+    proficiency
+  }
+  Skill.create(data)
   .then(skill => {
-    console.log(skill)
+    skill.save()
     res.redirect('/skills')
   })
   .catch(error => {
