@@ -1,7 +1,7 @@
 const skills = [
-  {first: 'Gurleen', last: 'Mcguire', _id: 125223},
-  {first: 'Kyron', last: 'Phelps', _id: 127904},
-  {first: 'Elle-May', last: 'Irwin', _id: 139608},
+  {type: 'HTML', proficiency: 'proficient', _id: 125223},
+  {type: 'CSS', proficiency: 'proficient', _id: 127904},
+  {type: 'JS', proficiency: 'proficient', _id: 139608},
 ]
 
 export {

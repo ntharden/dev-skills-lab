@@ -11,9 +11,9 @@
   <ul>
     <% skills.forEach(skill => { %>
       <li>
-				<%= .text %> 
+				<%= skill.type %> 
 				- 
-				<%= .done ? 'proficient' : 'not proficient' %>
+				<%= skill.proficiency ? 'proficient' : 'not proficient' %>
 			</li>
     <% }) %>
   </ul>
