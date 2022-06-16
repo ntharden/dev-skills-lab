@@ -1,4 +1,3 @@
-import { skills } from "../data/skill-data.js"
 import { Skill } from "../models/skill.js" 
 
 function index(req, res) {
