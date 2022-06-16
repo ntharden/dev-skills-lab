@@ -5,6 +5,7 @@ const router = Router()
 
 /* GET users listing. */
 router.get('/', index)
+router.get('/new', )
 
 export {
   router
